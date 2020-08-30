@@ -21,7 +21,7 @@ const EditTodoModal = ({ isOpen, onClose, todo }) => {
         try {
             const todosContract = await window.todosSmartContract.deployed();
             await todosContract.updateTodo(todo.id, newTodo, { from: account });
-            addNotification({ content: "Sucessfully added todo" });
+            addNotification({ content: "Sucessfully updated todo" });
             onClose();
         } catch (e) {
             addNotification({ content: "Failed to add todo", color: COLOR_PALETTE.negative });
