@@ -14,11 +14,11 @@ const App = () => {
 
   // Set up the Web3 singleton and get the todos smart contract instance.
   useEffect(() => {
-    console.log("aaa")
+    console.log("Starting up...");
     // TODO: Can handle other cases here, but most common case is window.ethereum,
     // so this is sufficient for demo purposes.
     if (window.ethereum) {
-      console.log("hello there")
+      console.log("Getting web3 provider");
       const web3Provider = window.ethereum;
       window.ethereum.enable() // Request account access.
           .then(() => {
