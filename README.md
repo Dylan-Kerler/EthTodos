@@ -10,6 +10,7 @@ Then we can start the blockchain. Your private key has to be manually prefixed w
 And now to deploy the contract:
 
 `npm install`
+
 `npm run deploy-contracts`
 
 Then metamask needs to be able to connect to the network. Add a custom network in metamask with this url: http://127.0.0.1:7545
