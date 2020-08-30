@@ -1,4 +1,4 @@
-import React, { useEffect, createContext, useContext, useLayoutEffect, useRef, useState } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import styled from "styled-components";
 import { COLOR_PALETTE } from '../../constants';
 import ScaleLoader from "react-spinners/ScaleLoader";

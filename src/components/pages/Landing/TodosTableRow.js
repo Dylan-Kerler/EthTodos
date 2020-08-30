@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { COLOR_PALETTE } from "../../../constants";
-import TodoEdit from "./EditTodoModal";
 import EditTodoModal from "./EditTodoModal";
 import Text from "../../core/Text";
-import Checkbox from '@material/react-checkbox';
 
 const Tr = styled.tr`
     border-radius: 3px;

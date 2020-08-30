@@ -1,4 +1,3 @@
-import React, { useEffect, createContext, useContext } from 'react';
 import styled from "styled-components";
 import { COLOR_PALETTE } from '../../../constants';
 

@@ -46,7 +46,7 @@ const TodosTable = ({ todos }) => {
                             Hmm, looks like your all caught up!
                         </Text>
                     :
-                        todos.map(todo => <TodosTableRow todo={todo}/>) 
+                        todos.map(todo => <TodosTableRow key={todo.id} todo={todo}/>) 
 
                 }
             </Table>    
