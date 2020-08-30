@@ -3,13 +3,15 @@
 First thing is to get the private key out of metamask. 
 Open metamask, click on the 3 small dots next to the address at the top, "Account Details" and then "Export Private Key".
 
+Install the dependencies:
+
+`npm install`
+
 Then we can start the blockchain. Your private key has to be manually prefixed with "0x" in order for ganache to parse it.
 
 `ganache-cli -p 7545 --account="0x<your private key>, 1000000000000000000000"`
 
 And now to deploy the contract:
-
-`npm install`
 
 `npm run deploy-contracts`
 
