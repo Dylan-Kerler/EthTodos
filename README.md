@@ -17,7 +17,7 @@ And now to deploy the contract:
 
 Then metamask needs to be able to connect to the network. Add a custom network in metamask with this url: http://127.0.0.1:7545
 
-To start up the app (may take a few seconds for initial start-up):
+To start up the app (may take a minute or two for initial start-up):
 
 `npm run start`
 
