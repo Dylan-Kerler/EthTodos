@@ -14,22 +14,22 @@ const App = () => {
 
   // Set up the Web3 singleton and get the todos smart contract instance.
   useEffect(() => {
-    window.onload = () => {
-      // TODO: Can handle other cases here, but most common case is window.ethereum,
-      // so this is sufficient for demo purposes.
-      if (window.ethereum) {
-        const web3Provider = window.ethereum;
-        window.ethereum.enable() // Request account access.
-            .then(() => {
-                const todosSmartContract = TruffleContract(todosContractArtifact);
-                todosSmartContract.setProvider(web3Provider);
-                window.todosSmartContract = todosSmartContract;
-                window.web3 = new Web3(web3Provider);
-                setIsLoading(false);
-            })
-            .catch(e => console.error("User denied account access"))
-      }
-    };
+    console.log("aaa")
+    // TODO: Can handle other cases here, but most common case is window.ethereum,
+    // so this is sufficient for demo purposes.
+    if (window.ethereum) {
+      console.log("hello there")
+      const web3Provider = window.ethereum;
+      window.ethereum.enable() // Request account access.
+          .then(() => {
+              const todosSmartContract = TruffleContract(todosContractArtifact);
+              todosSmartContract.setProvider(web3Provider);
+              window.todosSmartContract = todosSmartContract;
+              window.web3 = new Web3(web3Provider);
+              setIsLoading(false);
+          })
+          .catch(e => console.error("User denied account access"))
+    }
   }, []);
 
   return (

@@ -1,6 +1,7 @@
 ## Quick Start
 
-First thing is to get the private key out of metamask. Open metamask, click on the 3 small dots next to the address at the top, "Account Details" and then "Export Private Key".
+First thing is to get the private key out of metamask. 
+Open metamask, click on the 3 small dots next to the address at the top, "Account Details" and then "Export Private Key".
 
 Then we can start the blockchain. Your private key has to be manually prefixed with "0x" in order for ganache to parse it.
 
@@ -8,9 +9,12 @@ Then we can start the blockchain. Your private key has to be manually prefixed w
 
 And now to deploy the contract:
 
+`npm install`
 `npm run deploy-contracts`
 
-Then start up the app:
+Then metamask needs to be able to connect to the network. Add a custom network in metamask with this url: http://127.0.0.1:7545
+
+To start up the app (may take a few seconds for initial start-up):
 
 `npm run start`
 
